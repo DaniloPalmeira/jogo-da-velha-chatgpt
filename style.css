@@ -1,0 +1,70 @@
+/* Estilo para o tabuleiro do jogo */
+#board {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+/* Estilo para as células do tabuleiro */
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100px;
+	font-size: 48px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #343a40; /* Cor de fundo do tema dark */
+	color: #fff; /* Cor do texto do tema dark */
+	transition: background-color 0.3s ease-in-out; /* Transição suave na mudança de cor de fundo */
+}
+
+/* Estilo de hover para as células do tabuleiro */
+.cell:hover {
+	background-color: #495057; /* Cor de fundo do tema dark no hover */
+}
+
+/* Estilo para o modal de resultado */
+.modal-content {
+	background-color: #343a40; /* Cor de fundo do tema dark */
+	color: #fff; /* Cor do texto do tema dark */
+}
+
+/* Estilo para o botão "Jogar Novamente" no modal de resultado */
+#restart-button {
+	background-color: #007bff; /* Cor de fundo do botão */
+	color: #fff; /* Cor do texto do botão */
+}
+
+/* Estilo para o botão "Reiniciar Placar" */
+#reset-button {
+	margin-top: 10px;
+}
+
+/* Definindo o estilo do tema escuro */
+.dark-theme {
+	background-color: #222;
+	color: #fff;
+}
+
+/* Exemplo de estilo para o tabuleiro do jogo da velha no tema escuro */
+.board {
+	background-color: #333;
+}
+
+/* Exemplo de estilo para as células do tabuleiro no tema escuro */
+.cell {
+	background-color: #444;
+	color: #fff;
+}
+
+/* Exemplo de estilo para o modal de resultado no tema escuro */
+.modal {
+	background-color: #444;
+	color: #fff;
+}
