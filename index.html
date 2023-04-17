@@ -1,55 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>Jogo da Velha</title>
-		<!-- Incluindo os arquivos CSS do Bootstrap -->
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		/>
-		<!-- Incluindo o arquivo CSS customizado -->
+		<title>Jogo da Velha Moderno</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body class="dark-theme">
-		<div class="container text-center mt-5">
-			<h1>Jogo da Velha</h1>
-			<div id="board" class="mt-4">
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
+	<body>
+		<div id="game-container">
+			<h1 id="title">Jogo da Velha</h1>
+			<div id="board">
+				<div class="cell" id="cell-0"></div>
+				<div class="cell" id="cell-1"></div>
+				<div class="cell" id="cell-2"></div>
+				<div class="cell" id="cell-3"></div>
+				<div class="cell" id="cell-4"></div>
+				<div class="cell" id="cell-5"></div>
+				<div class="cell" id="cell-6"></div>
+				<div class="cell" id="cell-7"></div>
+				<div class="cell" id="cell-8"></div>
 			</div>
-			<div id="result-modal" class="modal" tabindex="-1">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-body">
-							<h2 id="result-message"></h2>
-							<button id="restart-button" class="btn btn-primary">
-								Jogar Novamente
-							</button>
-						</div>
-					</div>
+			<div id="status-container">
+				<p id="status">Vez do Jogador 1</p>
+				<div id="score-container">
+					<p id="score-player1" class="score">Jogador 1: 0</p>
+					<p id="score-player2" class="score">Jogador 2: 0</p>
+					<button id="reset-score">Resetar Placar</button>
+					<button id="reset-game">Reiniciar Jogo</button>
 				</div>
-			</div>
-			<div class="mt-4">
-				<button id="reset-button" class="btn btn-secondary">
-					Reiniciar Placar
-				</button>
-			</div>
-			<div id="score" class="mt-4">
-				<h3>Placar</h3>
-				<p id="player-x-score">Jogador X: 0</p>
-				<p id="player-o-score">Jogador O: 0</p>
 			</div>
 		</div>
 
-		<!-- Incluindo o arquivo JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
